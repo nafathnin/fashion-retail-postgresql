@@ -1,0 +1,61 @@
+product_id,product_name,category,price
+1,Basic Cotton T-Shirt,Tops,18.43
+2,Oversized T-Shirt,Tops,19.47
+3,Graphic T-Shirt,Tops,18.2
+4,Long Sleeve Tee,Tops,31.51
+5,Casual Blouse,Tops,28.7
+6,Linen Blouse,Tops,37.15
+7,Crop Top,Tops,11.65
+8,Knitted Sweater,Tops,31.22
+9,Hoodie Pullover,Tops,49.25
+10,Zip-Up Hoodie,Tops,43.92
+11,Slim Fit Jeans,Bottoms,57.83
+12,Straight Jeans,Bottoms,39.7
+13,High-Waist Trousers,Bottoms,44.08
+14,Jogger Pants,Bottoms,35.71
+15,Chino Pants,Bottoms,37.82
+16,Pleated Skirt,Bottoms,29.4
+17,A-Line Skirt,Bottoms,40.96
+18,Cargo Pants,Bottoms,28.02
+19,Denim Jacket,Outerwear,51.92
+20,Bomber Jacket,Outerwear,63.21
+21,Puffer Jacket,Outerwear,69.28
+22,Wool Coat,Outerwear,111.07
+23,Trench Coat,Outerwear,109.33
+24,Windbreaker,Outerwear,56.05
+25,Parka Jacket,Outerwear,98.8
+26,Training T-Shirt,Activewear,25.06
+27,Sports Bra,Activewear,34.5
+28,Running Shorts,Activewear,25.02
+29,Yoga Leggings,Activewear,34.63
+30,Gym Joggers,Activewear,36.45
+31,Active Hoodie,Activewear,42.32
+32,Cotton Pajama Set,Sleepwear,29.02
+33,Satin Pajama Set,Sleepwear,41.22
+34,Sleep Shirt,Sleepwear,13.96
+35,Bath Robe,Sleepwear,36.9
+36,Flannel Pajama Pants,Sleepwear,26.22
+37,Canvas Tote Bag,Accessories,14.82
+38,Mini Shoulder Bag,Accessories,20.17
+39,Leather Belt,Accessories,28.87
+40,Wool Scarf,Accessories,16.93
+41,Beanie Hat,Accessories,13.37
+42,Baseball Cap,Accessories,15.1
+43,Ankle Socks,Accessories,6.98
+44,Crew Socks,Accessories,6.85
+45,White Sneakers,Footwear,63.0
+46,Running Shoes,Footwear,71.99
+47,Slip-On Shoes,Footwear,44.23
+48,Chelsea Boots,Footwear,77.06
+49,Sandals,Footwear,23.47
+50,Chunky Sneakers,Footwear,40.52
+51,Ribbed Tank Top,Tops,14.58
+52,V-Neck Sweater,Tops,29.57
+53,Polo Shirt,Tops,28.22
+54,Linen Shorts,Bottoms,33.27
+55,Wide-Leg Pants,Bottoms,30.21
+56,Midi Skirt,Bottoms,22.32
+57,Knitted Cardigan,Outerwear,45.73
+58,Lightweight Jacket,Outerwear,47.05
+59,Sports Socks,Accessories,6.28
+60,Crossbody Bag,Accessories,37.11
