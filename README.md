@@ -53,6 +53,7 @@ The analysis answers real business questions using JOINs, CTEs, aggregations, an
 
 ## 🧩 Dataset Description
 
+```text
 1. customers table
 | column        | description                |
 | ------------- | -------------------------- |
@@ -77,6 +78,7 @@ The analysis answers real business questions using JOINs, CTEs, aggregations, an
 | product_id  | Linked to products table  |
 | quantity    | Quantity purchased        |
 | order_date  | Transaction date          |
+```
 
 ---
 
