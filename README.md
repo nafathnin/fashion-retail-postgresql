@@ -89,39 +89,40 @@ The analysis answers real business questions using JOINs, CTEs, aggregations, an
 
 ## 🎯 Business Questions Answered
 
-Sales Performance
-1. What are the total revenue, total orders, and average order value?
-2. What does the monthly sales trend look like?
+**Sales Performance**
+- What are the total revenue, total orders, and average order value?
+- What does the monthly sales trend look like?
 
-Customer Behavior
-3. Who are the top 10 customers based on total spending?
-4. What is the average purchase per customer (simple CLV)?
+**Customer Behavior**
+- Who are the top 10 customers based on total spending?
+- What is the average purchase per customer (simple CLV)?
 
-Product Analysis
-5. Which products are best-selling (by quantity)?
-6. Which product contributes the highest revenue?
+**Product Analysis**
+- Which products are best-selling (by quantity)?
+- Which product contributes the highest revenue?
 
-Growth Metrics (Window Functions)
-7. What is the running total of monthly revenue?
-8. What is the MoM growth (delta & growth%)?
-9. How are customers ranked based on monthly spending?
+**Growth Metrics (Window Functions)**
+- What is the running total of monthly revenue?
+- What is the MoM growth (delta & growth%)?
+- How are customers ranked based on monthly spending?
 
 ---
 
 ## 🧠 Key SQL Techniques Used
 
-- JOIN for combining multiple tables
-- GROUP BY + aggregations for metrics
-- CTE (WITH clause) for cleaner query logic
+- `JOIN` for combining multiple tables
+- `GROUP BY` + aggregations for metrics
+- `CTE` (WITH clause) for cleaner query logic
 - WINDOW FUNCTIONS (LAG, SUM OVER) for growth & ranking
-- DATE_TRUNC for monthly grouping
+- `DATE_TRUNC` for monthly grouping
 - Subqueries for top-N analysis
 
 ---
 
 ## 📊 Sample Queries
 
-1. Monthly Sales Trend
+1. **Monthly Sales Trend**
+```sql
 SELECT
     DATE_TRUNC('month', o.order_date) AS month_date,
     TO_CHAR(o.order_date, 'Mon') AS month,
@@ -131,8 +132,10 @@ FROM orders o
 JOIN products p ON o.product_id = p.product_id
 GROUP BY 1,2
 ORDER BY 1,2;
+```
 
-2. Top 10 Customers
+2. **Top 10 Customers**
+```sql
 SELECT
     c.customer_name,
     SUM(quantity * price) AS total_spent
@@ -142,8 +145,10 @@ JOIN products p ON o.product_id = p.product_id
 GROUP BY c.customer_name
 ORDER BY total_spent DESC
 LIMIT 10;
+```
 
-3. Month-over-Month Revenue Growth
+3. **Month-over-Month Revenue Growth**
+```sql
 WITH monthly_revenue AS (
     SELECT
         DATE_TRUNC('month', o.order_date) AS month_date,
@@ -164,33 +169,34 @@ SELECT
     ) AS growth_percent
 FROM monthly_revenue
 ORDER BY month;
+```
 
 ---
 
 ## 📈 Key Insights
 
-- Monthly revenue remained relatively stable, ranging from $40,000 to $50,000 throughout 2025.
-- Highest revenue: August 2025 — $49,793.64
-- Lowest revenue: February 2025 — $41,655.04
+- Monthly revenue remained relatively stable, ranging from **$40,000 to $50,000** throughout 2025.
+- Highest revenue: **August 2025 — $49,793.64**
+- Lowest revenue: **February 2025 — $41,655.04**
 - Monthly orders were consistent (470–525 orders).
-- Best-selling products: Flannel Pajama Pants, Straight Jeans, Chelsea Boots
-- Top revenue contributors: Wool Coat, Parka Jacket, Trench Coat
-- Highest Month-over-Month (MoM) revenue growth: March 2025
+- Best-selling products: **Flannel Pajama Pants, Straight Jeans, Chelsea Boots**
+- Top revenue contributors: **Wool Coat, Parka Jacket, Trench Coat**
+- Highest Month-over-Month (MoM) revenue growth: **March 2025**
 
 ---
 
 ## 🚀 How to Run This Project
 
 - Clone repository
-- Import customers.csv, products.csv, and orders.csv into PostgreSQL
-- Run table creation scripts in /sql/01_create_tables.sql
-- Run analysis scripts in /sql/
-- (Optional) Modify dataset using python/generate_dataset.py
+- Import `customers.csv`, `products.csv`, and `orders.csv` into PostgreSQL
+- Run table creation scripts in `/sql/01_create_tables.sql`
+- Run analysis scripts in `/sql/`
+- (Optional) Modify dataset using `python/generate_dataset.py`
 
 ---
 
 ## 👩‍💻 Author
 
-Fathnin Nur Azmina
+**Fathnin Nur Azmina**
 Data Analyst (Entry-Level)
 LinkedIn: https://linkedin.com/in/fathninuraz
