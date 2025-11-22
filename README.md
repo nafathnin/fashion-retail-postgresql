@@ -27,6 +27,7 @@ The analysis answers real business questions using JOINs, CTEs, aggregations, an
 
 ## 🗂️ Repository Structure
 
+```text
 ├── data/
 │   ├── customers.csv
 │   ├── products.csv
@@ -46,6 +47,7 @@ The analysis answers real business questions using JOINs, CTEs, aggregations, an
 │   └── erd.png
 │
 └── README.md
+```
 
 ---
 
