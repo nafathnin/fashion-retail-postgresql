@@ -198,5 +198,7 @@ ORDER BY month;
 ## 👩‍💻 Author
 
 **Fathnin Nur Azmina**
+
 Data Analyst (Entry-Level)
+
 LinkedIn: https://linkedin.com/in/fathninuraz
